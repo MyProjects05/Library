@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    flex-wrap: wrap;
+}
+
+button{
+    width: 150px;
+    height: 70px;
+    background-color: grey;
+    color: white;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size:x-large;
+}
+
+.field{
+    grid-row: 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+    display: grid;
+    gap: 2vh;
+    font-size: large;
+    width: 20vw;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:400;
+}
+
+.subfield{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+
+.frm{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 3vh;
+    font-size: large;
+}
+
+.inp{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+legend{
+    font-size: xx-large;
+}
+
+button[type = "submit"]{
+    height: 3vh;
+    text-align: center;
+    width: 9vw;
+    background-color: khaki;
+}
+button[type = "submit"]:hover{
+    background-color:aqua;
+    border-color: aliceblue;
+}
+button[type = "submit"]:active{
+    background-color: aliceblue;
+}
+
+.boo{
+    padding-bottom: 10vh;
+    display: flex;
+    gap: 4vw;
+}
+
+.forms{
+    display:flex;
+    gap: 5vw;
+}

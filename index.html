@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <div class = "boo">
+        <button class = "btn">New Book</button>
+        <button class = "display">Show Table</button>
+    </div>
+    <div class="forms">
+        <form action="/newBooks" method="post" class="ff">
+            <fieldset class="field">
+                <legend>Add a new book</legend>
+                <div class = "frm">
+                    <label for="title">Title of the book</label>
+                    <input type="text" id = "title" placeholder="Hobbit" name="title" required>
+                </div>
+                <div class = "frm">
+                    <label for="author">Author of the book</label>
+                    <input type="text" id = "author" placeholder="Tolkien" name="author" required>
+                </div>
+                <div class = "frm">
+                    <label for="date">Year of release</label>
+                    <input type="number" id = "date" placeholder="1943" name="date" max="2026" required>
+                </div class = "frm">
+                <fieldset class="subfield">
+                    <div class="inp">
+                        <label for="read">Read</label>
+                        <input type="radio" id = "read" placeholder="Yes" name="read" value="Read">
+                    </div>
+                    <div class="inp">
+                        <label for="read">Not Read</label>
+                        <input type="radio" id = "read" placeholder="Yes" name="read" value="Not Read">
+                    </div>
+                </fieldset>
+                <button type="submit">Add</button>
+            </fieldset>
+        </form>
+        <form action="/remove" method="post" class="frmm">
+            <fieldset class="field">
+                <legend>Remove Book</legend>
+                <select name="books" id="books">
+                    <option value=""></option>
+                </select>
+                <button type="submit" id="remove">Remove</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class="tables"></div>
+</body>
+</html>
